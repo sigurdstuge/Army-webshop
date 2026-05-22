@@ -4,47 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type="module" src="scripts/gathering-army.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
     <title>Gathering Army</title>
 </head>
-<body>
-    <div class="background">
-        <header>
-            <div class="wrapper-menu">
-                <div class="wrapper-menu__logo-title"></div>
-                    <nav>
-                        <ul class="menu__list"></ul>
-                    </nav>
-                </div>
-        </header>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a id="header__logo" href="#">Armies of Zondor</a>
+        <ul class="nav__list">
+          <li>
+            <a id="header__nav-link" href="./getting-resources.html"
+              >Get resources</a
+            >
+          </li>
+          <li>
+            <a id="header__nav-link" href="./your-army.html">Your army</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class="main-content">
-
-
-            <section class="resource-section">
-            </section>
-
-            <section class="headlines">
-                <h1>Build your army</h3>
-            </section>
-            <section class="warrior-section"></section>
-            <section class="headlines">
-                <br>
-                <h1>Machines and Animals</h1>
-                <br>
-            </section>
-            <section class="supplement-section"></section>
-
-
-        </main>
-
-        <footer class="footer">
-            <section>
-        
-            </section>
-        </footer>
+    <div id="search-container">
+      <input placeholder="search.." type="text" name="" id="search-filter" />
     </div>
-   
-</body>
+
+    <div class="icon-bar">
+      <div class="icon">
+        <img id="icon-image" src="./images/gold-coin.png" alt="coin" />
+        <p id="gold-count">0</p>
+      </div>
+      <div class="icon">
+        <img id="icon-image" src="./images/metal.png" alt="metal" />
+        <p id="metal-count">0</p>
+      </div>
+      <div class="icon">
+        <img id="icon-image" src="./images/wood.png" alt="" />
+        <p id="wood-count">0</p>
+      </div>
+    </div>
+
+    <section id="search-result"></section>
+
+    <section id="warrior-container">
+      <!-- generated in js -->
+    </section>
+  </body>
 </html>
 

@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--header-color);
+  position: sticky;
+  top: 0;
+  height: 5rem;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20rem;
+}
+
+#header__nav-link {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+#header__logo {
+  font-size: 3rem;
+  color: gold;
+}

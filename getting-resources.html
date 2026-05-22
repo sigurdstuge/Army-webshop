@@ -5,34 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Resources</title>
     <script defer type="module" src="scripts/getting-resources.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
 </head>
 <body>
-    <div class="background">
-        <header>
-            <div class="wrapper-menu">
-                <div class="wrapper-menu__logo-title"></div>
-                    <nav>
-                        <ul class="menu__list"></ul>
-                    </nav>
-                </div>
-        </header>
+    <header class="header">
+      <nav class="header__nav">
+        <a id="header__logo" href="./gathering-army.html">Armies of Zondor</a>
+        <ul class="nav__list">
+          <li><a id="header__nav-link" href="#">Your resources</a></li>
+          <li>
+            <a id="header__nav-link" href="./your-army.html">Your army</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class="main-content">
-
-            <section class="resource-section">
-            </section>
-
-            <section class="getting-resources-section">
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            <section>
-        
-            </section>
-        </footer>
+    <div class="icon-bar">
+      <div id="icon">
+        <img id="icon-image" src="./images/gold-coin.png" alt="coin" />
+        <p id="gold-count">0</p>
+      </div>
+      <div id="icon">
+        <img id="icon-image" src="./images/metal.png" alt="metal" />
+        <p id="metal-count">0</p>
+      </div>
+      <div id="icon">
+        <img id="icon-image" src="./images/wood.png" alt="" />
+        <p id="wood-count">0</p>
+      </div>
     </div>
-</body>
+    <div class="recources">
+      <img
+        class="resources-image"
+        id="resources-mine"
+        src="./images/mines-of-thiartha.jpg"
+        alt="mine"
+      />
+      <img
+        class="resources-image"
+        id="resources-wood"
+        src="./images/woods-of-ghalduz.png"
+        alt=""
+      />
+    </div>
+    <button id="clear-btn">delete</button>
+  </body>
 </html>
