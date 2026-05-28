@@ -65,3 +65,16 @@ gap: 2rem;
   align-items: center;
   padding: 2rem;
 }
+
+#warror-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#warror-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
