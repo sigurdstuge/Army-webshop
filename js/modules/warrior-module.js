@@ -48,3 +48,5 @@ const warriorsObjects = [
     buy: "add to basket",
   },
 ];
+
+export default warriorsObjects;
