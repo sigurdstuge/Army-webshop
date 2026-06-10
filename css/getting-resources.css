@@ -1,0 +1,18 @@
+.recources {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 3rem;
+gap: 5rem;
+
+}
+
+.resources-image {
+	height: 20rem;
+}
+
+.resources-image img {
+	width: 100%;
+	height: auto;
+}
