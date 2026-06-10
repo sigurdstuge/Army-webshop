@@ -1,3 +1,8 @@
+body { 
+  background-color: var(--main-color);
+  height: 100vh;
+  margin: 0;}
+
 .header {
   background-color: var(--header-color);
   position: sticky;
@@ -66,15 +71,29 @@ gap: 2rem;
   padding: 2rem;
 }
 
-#warror-container {
+#warrior-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
 }
 
-#warror-box {
+#warrior-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid 1px black;
+  background-color: var(--box-color);
+  border-radius: 1rem;
+}
+
+.warrior-button {
+  height: 2rem;
+  border-radius: 2rem;
+
+}
+
+.warrior-button:active {
+  background-color: pink;
+  color: white;
 }
