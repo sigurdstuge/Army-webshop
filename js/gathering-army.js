@@ -38,3 +38,29 @@ const warriorData = (filterData) => {
 	});
 };
 warriorData(warriorsObjects);
+
+
+const warriorButton = (i) => {
+	const selectedWarrior = warriorsObjects[i];
+	console.log(selectedWarrior)
+	
+	if(goldAmmount >= selectedWarrior.price) {
+		goldAmmount -= selectedWarrior.price
+		goldCount.innerHTML = goldAmmount;
+		localStorage.setItem("gold", goldAmmount)
+		storage.addWarriorToStorage(selectedWarrior);
+	} else {
+		alert("not enough coins.")
+	}
+}
+
+const selectProductButton = () => {
+	  const warriorButtons = document.querySelectorAll(".warrior-button");
+	 warriorButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const index = button.getAttribute("data-index");
+      warriorButton(index);
+    });
+  });
+}
+selectProductButton();
