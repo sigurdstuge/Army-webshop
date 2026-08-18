@@ -3,3 +3,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
 }
+
+#favorite-button {
+  border: none;
+  color: none;
+  background-color: var(--box-color);  
+  margin: 2rem;
+  font-size: 2rem;
+}
