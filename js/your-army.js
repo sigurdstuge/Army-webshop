@@ -25,7 +25,8 @@ const renderYourArmy = () => {
     yourArmy.innerHTML += `
   <article id="warrior-box">
         <h3 id="warrior-topic">${warrior.name}</h3>
-         <img id="warrior-image" src="./assets/${warrior.image}" alt="warrior"> 
+        <img id="warrior-image" src="./assets/${warrior.image}" alt="warrior"> 
+        <button id="favorite-button">☆</>
       </article>
   `;
   })
