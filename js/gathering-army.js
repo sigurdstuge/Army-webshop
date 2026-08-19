@@ -48,7 +48,11 @@ const warriorButton = (i) => {
 		goldAmmount -= selectedWarrior.price
 		goldCount.innerHTML = goldAmmount;
 		localStorage.setItem("gold", goldAmmount)
-		storage.addWarriorToStorage(selectedWarrior);
+		const selectedWarrior = warriorsObjects[i];
+		storage.addWarriorToStorage({
+			...selectedWarrior,
+			isFavorite: false
+		})
 	} else {
 		alert("not enough coins.")
 	}
