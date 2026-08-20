@@ -6,7 +6,7 @@
 
 .favorite-button {
   border: none;
-  color: none;
+  color: yellow;
   background-color: var(--box-color);  
   margin: 2rem;
   font-size: 2rem;
